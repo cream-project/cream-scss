@@ -1,0 +1,46 @@
+// doc
+//
+// ---
+// title: 'footer'
+// name: 'Footer'
+// category: modules
+// ---
+//
+// ```html_example
+//     <footer class="footer" id="bottom">
+//       <nav class="linklist">
+//         <ul>
+//           <li><a href="#">Link 1</a></li>
+//           <li><a href="#">Link 2</a></li>
+//           <li><a href="#">Link 3</a></li>
+//         </ul>
+//       </nav>
+//       <nav class="topanchor">
+//         <a href="#top">Top</a>
+//       </nav>
+//     </footer>
+// ```
+//
+// ```slim_example
+//     footer#bottom.footer
+//       nav.linklist
+//         ul
+//           li: a[href="#"] Link 1
+//           li: a[href="#"] Link 2
+//           li: a[href="#"] Link 3
+//       nav.topanchor
+//         a[href="#top"] Top
+// ```
+
+// Variables
+
+$footer-color-background: $base-color-background;
+$footer-color-foreground: $base-color-foreground;
+
+// Styles
+
+.footer {
+  background: $footer-color-background;
+  color: $footer-color-foreground;
+  padding: $base-space;
+}

@@ -1,0 +1,21 @@
+// doc
+//
+// ---
+// title: 'topanchor'
+// name: 'Top anchor'
+// category: components
+// ---
+//
+// ```html_example
+//     <nav class="topanchor">
+//       <a href="#top">Top</a>
+//     </nav>
+// ```
+//
+// ```slim_example
+//     nav.topanchor
+//       a[href="#top"] Top
+// ```
+
+.topanchor {
+}

@@ -1,0 +1,46 @@
+// doc
+//
+// ---
+// title: 'header'
+// name: 'Header'
+// category: modules
+// ---
+//
+// ```html_example
+//     <header class="header" id="top">
+//       <img src="logo.png">
+//       <h1>Yo!</h1>
+//       <nav class="navbar">
+//         <ul>
+//           <li><a href="#">Link 1</a></li>
+//           <li><a href="#">Link 2</a></li>
+//           <li><a href="#">Link 3</a></li>
+//         </ul>
+//       </nav>
+//     </footer>
+// ```
+//
+// ```slim_example
+//     header#top.header
+//       img[src="logo.png"]
+//       h1 Yo!
+//       nav.navbar
+//         ul
+//           li: a[href="#"] Link 1
+//           li: a[href="#"] Link 2
+//           li: a[href="#"] Link 3
+// ```
+
+// Variables
+
+$header-color-background: $base-color-background;
+$header-color-foreground: $base-color-foreground;
+
+
+// Styles
+
+.header {
+  background: $header-color-background;
+  color: $header-color-foreground;
+  padding: $base-space;
+}

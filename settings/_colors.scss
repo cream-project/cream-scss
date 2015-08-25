@@ -1,0 +1,25 @@
+//-----------------------------------------------------------------------------
+//
+// Color settings
+//
+//-----------------------------------------------------------------------------
+
+
+// Base colors ----------------------------------------------------------------
+
+$base-color-background: #fff;
+$base-color-foreground: #000;
+
+
+// Brand colors ---------------------------------------------------------------
+
+$base-color-brand-1: #000; // black
+$base-color-brand-2: #fff; // white
+$base-color-brand-3: #00c; // blue
+$base-color-brand-4: #c00; // red
+
+// Special purpose colors -----------------------------------------------------
+
+$base-color-link: $base-color-brand-3;
+$base-color-mark: lighten($base-color-brand-1, 20);
+$base-color-silent: #eee; // grey

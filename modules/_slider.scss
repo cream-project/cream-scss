@@ -1,0 +1,99 @@
+// doc
+//
+// ---
+// title: 'slider'
+// name: 'Slider'
+// category: modules
+// ---
+//
+// ```html_example
+//     <div class="slider">
+//       <ul class="slides">
+//         <li class="slide"><img src="image01.jpg"></li>
+//         <li class="slide"><img src="image02.jpg"></li>
+//         <li class="slide"><img src="image03.jpg"></li>
+//       </ul>
+//       <nav>
+//         <a href="#prev" class="prev">Previous</a>
+//         <a href="#next" class="next">Next</a>
+//       </nav>
+//     </div>
+// ```
+//
+// ```slim_example
+//     .slider
+//       ul.slides
+//         li.slide: img[src="image01.jpg"]
+//         li.slide: img[src="image02.jpg"]
+//         li.slide: img[src="image03.jpg"]
+//       nav
+//        a.prev[href="#prev"] Previous
+//        a.next[href="#next"] Next
+// ```
+
+// Styles
+
+.slider {
+  position: relative;
+
+  .slide {
+    transition: none;
+
+    width: 100%;
+
+    &.animate {
+      transition: transform $base-movement-duration $base-movement-timing;
+    }
+
+    &.center {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.left {
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    &.right {
+      transform: translate3d(100%, 0, 0);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .slides {
+    @extend %unstyled-list;
+
+    position: relative;
+    height: 100%;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    a {
+      background: rgba($base-color-background, 0.5);
+      display: block;
+      padding: $base-space;
+      position: absolute;
+    }
+
+    a.next,
+    a.prev{
+      top: 40%;
+    }
+
+    a.next {
+      right: 0;
+    }
+
+    a.prev {
+      left: 0;
+    }
+  }
+}

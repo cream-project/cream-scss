@@ -1,0 +1,46 @@
+//-----------------------------------------------------------------------------
+//
+// Font settings
+//
+//-----------------------------------------------------------------------------
+
+
+// Font faces -----------------------------------------------------------------
+
+// @font-face {
+//   font-family: 'Open Sans';
+//   src: url('../fonts/OpenSans-Regular.ttf');
+//   font-style: normal;
+//   font-weight: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Open Sans';
+//   src: url('../fonts/OpenSans-Italic.ttf');
+//   font-style: italic;
+//   font-weight: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Open Sans';
+//   src: url('../fonts/OpenSans-Bold.ttf');
+//   font-style: normal;
+//   font-weight: bold;
+// }
+
+
+// Font settings --------------------------------------------------------------
+
+$base-fontFamily: sans-serif;
+$base-fontFamily-code: monospace;
+
+$base-fontSize: 1em;
+$base-fontSize-xxl: ($base-fontSize * 4);
+$base-fontSize-xl: ($base-fontSize * 2.8);
+$base-fontSize-l: ($base-fontSize * 2);
+$base-fontSize-m: ($base-fontSize * 1.4);
+$base-fontSize-s: ($base-fontSize * 1);
+$base-fontSize-xs: ($base-fontSize * 0.8);
+
+$base-letterSpacing: 0;
+$base-lineHeight: 1.2;

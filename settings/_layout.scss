@@ -1,0 +1,47 @@
+//-----------------------------------------------------------------------------
+//
+// Layout settings
+//
+//-----------------------------------------------------------------------------
+
+
+// Limits ---------------------------------------------------------------------
+
+$base-maxWidth:       90em; // 1440px
+
+
+// Breakpoints ----------------------------------------------------------------
+
+$base-screen-s:       (0em, 40em); // 0, 640px
+$base-screen-m:       (40.063em, 64em); // 641px, 1024px
+$base-screen-l:       (64.063em, 90em); // 1025px, 1440px
+$base-screen-xl:      (90.063em, 120em); // 1441px, 1920px
+$base-screen-xxl:     (120.063em); // 1921px
+
+$base-screen-m-up:    'only screen
+                       and (min-width: #{nth($base-screen-m, 1)})';
+$base-screen-l-up:    'only screen
+                       and (min-width: #{nth($base-screen-l, 1)})';
+$base-screen-xl-up:   'only screen
+                       and (min-width: #{nth($base-screen-xl, 1)})';
+$base-screen-xxl-up:  'only screen
+                       and (min-width: #{nth($base-screen-xxl, 1)})';
+
+$base-screen-s-only:  'only screen
+                       and (min-width: #{nth($base-screen-s, 1)})
+                       and (max-width: #{nth($base-screen-s, 2)})';
+$base-screen-m-only:  'only screen
+                       and (min-width: #{nth($base-screen-m, 1)})
+                       and (max-width: #{nth($base-screen-m, 2)})';
+$base-screen-l-only:  'only screen
+                       and (min-width: #{nth($base-screen-l, 1)})
+                       and (max-width: #{nth($base-screen-l, 2)})';
+$base-screen-xl-only: 'only screen
+                       and (min-width: #{nth($base-screen-xl, 1)})
+                       and (max-width: #{nth($base-screen-xl, 2)})';
+
+
+// Spacing --------------------------------------------------------------------
+
+$base-space:           1em;
+$base-space-fluid:     1%;

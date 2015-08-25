@@ -1,0 +1,65 @@
+// doc
+//
+// ---
+// title: 'navbar'
+// name: 'Navigation bar'
+// category: components
+// ---
+//
+// ```html_example
+//     <nav class="navbar">
+//       <ul>
+//         <li><a href="#">Link 1</a></li>
+//         <li><a href="#">Link 2</a></li>
+//         <li><a href="#">Link 3</a></li>
+//       </ul>
+//     </nav>
+// ```
+//
+// ```slim_example
+//     nav.navbar
+//       ul
+//         li: a[href="#"] Link 1
+//         li: a[href="#"] Link 2
+//         li: a[href="#"] Link 3
+// ```
+
+
+// Variables
+
+$navbar-color-background: $base-color-background;
+$navbar-color-foreground: $base-color-foreground;
+$navbar-color-link: $base-color-link;
+
+
+// Styles
+
+.navbar {
+  background-color: $navbar-color-background;
+  padding: ($base-space) 0;
+  width: 100%;
+
+  a {
+    background: $navbar-color-button;
+    color: $navbar-color-foreground;
+    display: block;
+    padding: $base-space;
+    text-align: center;
+  }
+
+  ul {
+    @extend %unstyled-list;
+  }
+}
+
+
+// Media queries
+
+@media #{$base-screen-m-up} {
+  .navbar {
+    li {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+}

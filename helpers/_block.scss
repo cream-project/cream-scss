@@ -1,0 +1,63 @@
+// *************************************
+//
+//   Blocks grid
+//
+// *************************************
+
+$block-gutter: $base-space-fluid;
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+@mixin block-columns($columns) {
+  margin: $block-gutter;
+  width: ((100% / $columns) - ($block-gutter * 2)) + (($block-gutter * 2) / $columns);
+
+  &:nth-child(#{$columns}n+1) {
+    margin: $block-gutter $block-gutter $block-gutter 0;
+  }
+
+  &:nth-child(#{$columns}n) {
+    margin: $block-gutter 0 $block-gutter $block-gutter;
+  }
+}
+
+// -------------------------------------
+//   Block definition
+// -------------------------------------
+
+%block {
+  *zoom: 1; // Fix for IE 6/7
+  *display: inline; // Fix for IE 6/7
+
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+// -------------------------------------
+//   Block sizes
+// -------------------------------------
+
+%block-s {
+  @media #{$base-screen-s-only} {
+    @include block-columns(2);
+  }
+  @media #{$base-screen-m-only} {
+    @include block-columns(4);
+  }
+  @media #{$base-screen-l-up} {
+    @include block-columns(8);
+  }
+}
+
+%block-m {
+  @media #{$base-screen-m-only} {
+    @include block-columns(2);
+  }
+  @media #{$base-screen-l-up} {
+    @include block-columns(4);
+  }
+}
