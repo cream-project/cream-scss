@@ -18,26 +18,26 @@ $base-screen-l:       (64.063em, 90em); // 1025px, 1440px
 $base-screen-xl:      (90.063em, 120em); // 1441px, 1920px
 $base-screen-xxl:     (120.063em); // 1921px
 
-$base-screen-m-up:    'only screen
+$base-screen-m-up:    'only screen\a
                        and (min-width: #{nth($base-screen-m, 1)})';
-$base-screen-l-up:    'only screen
+$base-screen-l-up:    'only screen\a
                        and (min-width: #{nth($base-screen-l, 1)})';
-$base-screen-xl-up:   'only screen
+$base-screen-xl-up:   'only screen\a
                        and (min-width: #{nth($base-screen-xl, 1)})';
-$base-screen-xxl-up:  'only screen
+$base-screen-xxl-up:  'only screen\a
                        and (min-width: #{nth($base-screen-xxl, 1)})';
 
-$base-screen-s-only:  'only screen
-                       and (min-width: #{nth($base-screen-s, 1)})
+$base-screen-s-only:  'only screen\a
+                       and (min-width: #{nth($base-screen-s, 1)})\a
                        and (max-width: #{nth($base-screen-s, 2)})';
-$base-screen-m-only:  'only screen
-                       and (min-width: #{nth($base-screen-m, 1)})
+$base-screen-m-only:  'only screen\a
+                       and (min-width: #{nth($base-screen-m, 1)})\a
                        and (max-width: #{nth($base-screen-m, 2)})';
-$base-screen-l-only:  'only screen
-                       and (min-width: #{nth($base-screen-l, 1)})
+$base-screen-l-only:  'only screen\a
+                       and (min-width: #{nth($base-screen-l, 1)})\a
                        and (max-width: #{nth($base-screen-l, 2)})';
-$base-screen-xl-only: 'only screen
-                       and (min-width: #{nth($base-screen-xl, 1)})
+$base-screen-xl-only: 'only screen\a
+                       and (min-width: #{nth($base-screen-xl, 1)})\a
                        and (max-width: #{nth($base-screen-xl, 2)})';
 
 
