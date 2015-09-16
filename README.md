@@ -8,7 +8,7 @@ Uses [Autoprefixer](https://github.com/postcss/autoprefixer) to generate vendor 
 
 The documentation format can be used with [Hologram](http://trulia.github.io/hologram/), to automatically generate a styleguide.
 
-Check [STYLE.md](https://github.com/cream-project/cream-js/blob/master/STYLE.md) for coding conventions.
+Check [STYLE.md](https://github.com/cream-project/cream-scss/blob/master/STYLE.md) for coding conventions.
 
 ## Directories
 
@@ -32,3 +32,6 @@ Complex building blocks.
 
 ### pages
 Page templates.
+
+### License
+Licensed under the [MIT license](https://github.com/cream-project/cream-scss/blob/master/LICENSE).
