@@ -1,6 +1,34 @@
-# Coding style guidelines
+# SCSS style guidelines
+SCSS style guide, based on [Google HTML/CSS style guide](https://google.github.io/styleguide/htmlcssguide.xml).
 
-Introduction...
+## CSS guidelines
+
+### ID and class naming
+- Use meaningful or generic ID and class names.
+- Instead of presentational or cryptic names, always use ID and class names that reflect the purpose of the element in question, or that are otherwise generic.
+- Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers.”
+
+```scss
+/* Not recommended: meaningless */
+#yee-1901 {}
+
+/* Not recommended: presentational */
+.button-green {}
+.clear {}
+
+```
+```scss
+/* Recommended: specific */
+#gallery {}
+#login {}
+.video {}
+
+/* Recommended: generic */
+.aux {}
+.alt {}
+```
+## SCSS specific guidelines
+
 
 
 # Limitations
